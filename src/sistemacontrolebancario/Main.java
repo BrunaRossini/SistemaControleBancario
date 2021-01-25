@@ -16,7 +16,7 @@ public class Main {
 		MovimentoDAO mvDao = new MovimentoDAO();
 
 		// Numero da conta a ser persistida
-		long numeroContaExemplo = 2316;
+		long numeroContaExemplo = 2317;
 
 		// Cria e persite um objeto cc1 do tipo ContaComum com saldo 0.0
 		ContaComum cc3 = new ContaComum();
@@ -28,6 +28,7 @@ public class Main {
 		cc3.setSaldoConta(0.0);
 
 		ccDao.criarContaComum(cc3);
+		
 
 		// Cria e persite um movimento m1 da conta cc1 - Depósito de 1000
 		Movimento m1 = new Movimento();
@@ -50,8 +51,9 @@ public class Main {
 			System.out
 					.println("MV ID " + m2.getIdMovimento() + ": Saque de " + m2.getValorMovimento() + " realizado!\n");
 		}
-
-
+		
+		
+		
 		// Fecha as conexões utilizadas
 		ccDao.fecharConexao();
 		mvDao.fecharConexao();

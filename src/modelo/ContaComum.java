@@ -1,6 +1,7 @@
 package modelo;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 
 public class ContaComum {
 
@@ -10,6 +11,19 @@ public class ContaComum {
 	protected int Situacaoconta;
 	protected int senhaConta;
 	protected double saldoConta;
+	private ArrayList<Movimento> movimentosConta;
+	
+	public ContaComum() {
+		movimentosConta = new ArrayList<Movimento>();
+	}
+
+	public ArrayList<Movimento> getMovimentosConta() {
+		return movimentosConta;
+	}
+
+	public void setMovimentosConta(ArrayList<Movimento> movimentosConta) {
+		this.movimentosConta = movimentosConta;
+	}
 
 	public long getNumeroConta() {
 		return numeroConta;
