@@ -21,7 +21,7 @@ Padrão utilizado para a modelagem de classes de repositório, esconde (encapsul
 <p> Foi determinada a utilização do padrão DAO por ser uma aplicação simples. 
 
 
-# Arquiterura
+# Arquitetura
 Uma boa prática é termos um pacote (módulo ou camada) reservada ao Modelo de domínio (dados que precisam ser persistidos).
 <h2> Camada de domínio -  Modelo de domínio </h2>
 <h3>Classe de Domínio.</h3>
@@ -44,7 +44,7 @@ Uma boa prática é termos um pacote (módulo ou camada) reservada ao Modelo de 
 <p> ° Classe que abstrai o conjunto de objetos de uma determinada classe de domínio persistidos no banco de dados, bem como as operações possíveis de serem efetuadas sobre eles (inserção, recuperação, atualização e
 exclusão; ou create, retrieve, update and delete - CRUD).
 <p> ° Objetos desse tipo estabelecem uma interface entre o modelo orientado a objetos e o modelo relacional.
-<p> ° Objetos desse tipo efetuam o mapeamento objetorelacional, transparente ao restante da aplicação.
+<p> ° Objetos desse tipo efetuam o mapeamento objeto-relacional, transparente ao restante da aplicação.
 
 
 # Referências 
